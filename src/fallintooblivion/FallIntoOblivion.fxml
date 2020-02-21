@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="405.0" prefWidth="681.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fallintooblivion.FallIntoOblivionController">
+   <children>
+      <TextField fx:id="TF1" alignment="CENTER" layoutX="94.0" layoutY="255.0" prefHeight="31.0" prefWidth="493.0" />
+      <Label layoutX="283.0" layoutY="209.0" text="Diretoria">
+         <font>
+            <Font size="29.0" />
+         </font></Label>
+      <Button fx:id="Button_monotorizar" layoutX="208.0" layoutY="305.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="125.0" text="Monitorizar" />
+      <Button layoutX="526.0" layoutY="365.0" mnemonicParsing="false" onAction="#recoverFromOblivion" text="Reaver Ficheiro" />
+      <ImageView fitHeight="160.0" fitWidth="438.0" layoutX="120.0" layoutY="35.0">
+         <image>
+            <Image url="@FallIntoOblivion.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="629.0" layoutY="35.0" mnemonicParsing="false" onAction="#help" text="?" textFill="RED">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="Button_stop" layoutX="344.0" layoutY="305.0" mnemonicParsing="false" onAction="#stopMonotorizing" text="Parar de Monitorizar" />
+   </children>
+</AnchorPane>

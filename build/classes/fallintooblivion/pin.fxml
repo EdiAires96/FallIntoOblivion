@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="268.0" prefWidth="409.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fallintooblivion.PinController">
+   <children>
+      <Label layoutX="101.0" layoutY="164.0" text="Pin do ficheiro:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="lFile" layoutX="191.0" layoutY="164.0" text="burro.txt" />
+      <Label alignment="CENTER" layoutX="101.0" layoutY="200.0" text="Favor guardá-lo para recuperar ficheiro">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="lPin" layoutX="152.0" layoutY="84.0" prefHeight="70.0" prefWidth="107.0" text="0000" textAlignment="CENTER">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="70.0" fitWidth="86.0" layoutX="163.0" layoutY="14.0">
+         <image>
+            <Image url="@PIN.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

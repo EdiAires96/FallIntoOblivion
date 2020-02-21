@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="428.0" prefWidth="681.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fallintooblivion.RecoverFromOblivionController">
+   <children>
+      <ImageView fitHeight="139.0" fitWidth="353.0" layoutX="164.0" layoutY="20.0">
+         <image>
+            <Image url="@Recover%20from%20oblivion.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="53.0" layoutY="188.0" text="NOME DO FICHEIRO">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="171.0" layoutY="347.0" text="PIN">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="294.0" text="DIRETORIA DE DESTINO">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TFNFile" layoutX="215.0" layoutY="183.0" prefHeight="31.0" prefWidth="421.0" promptText="exemplo.aes" />
+      <TextField fx:id="TFDIR" disable="true" layoutX="215.0" layoutY="291.0" prefHeight="31.0" prefWidth="421.0" promptText="D:\users\jcfpascoal\Ambiente de trabalho\fallintooblivion" />
+      <TextField fx:id="TFPIN" disable="true" layoutX="221.0" layoutY="336.0" prefHeight="39.0" prefWidth="66.0" promptText="0000">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="Bverify" layoutX="546.0" layoutY="227.0" mnemonicParsing="false" onAction="#verificar" text="VERIFICAR" />
+      <Button fx:id="Brecover" disable="true" layoutX="556.0" layoutY="372.0" mnemonicParsing="false" onAction="#recuperar" text="RECUPERAR" />
+      <Button layoutX="618.0" layoutY="27.0" mnemonicParsing="false" onAction="#help" text="?" textFill="RED">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
